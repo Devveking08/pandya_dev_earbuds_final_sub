@@ -37,3 +37,91 @@
             <img src="images/logo.png" alt="Logo">
         </div>
     </div>
+
+    <div class="col-span-full">
+        <canvas id="explode-view">    
+    </canvas> 
+    </div>
+    
+    <section class="grid-con">
+        <section class="col-span-full">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, veniam! Nam explicabo impedit nobis similique, perferendis veniam iure minus voluptate. Quo maiores doloribus atque rem facilis fuga accusantium in ea!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, veniam! Nam explicabo impedit nobis similique, perferendis veniam iure minus voluptate. Quo maiores doloribus atque rem facilis fuga accusantium in ea!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, veniam! Nam explicabo impedit nobis similique, perferendis veniam iure minus voluptate. Quo maiores doloribus atque rem facilis fuga accusantium in ea!
+            </p>
+
+        </section>
+        <div class="col-span-full">
+            <div id="mobile-tablet-view">
+                <img src="images/earbud-x-ray.jpg" alt="X ray view of ear bud">
+                <img src="images/earbud.jpg" alt="Regular view of ear bud">
+            </div>
+            <div id="outerShell">
+                <div id="imageCon">
+                <div class="slideImage image-right"></div> <!-- wire version -->
+                <div class="slideImage image-left"></div> <!-- actual earbuds -->
+                <div class="slideImage image-drag"></div> <!-- div to create black bar -->
+                </div>
+            </div>  
+        </div>
+
+        <section class="col-span-full">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, veniam! Nam explicabo impedit nobis similique, perferendis veniam iure minus voluptate. Quo maiores doloribus atque rem facilis fuga accusantium in ea!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, veniam! Nam explicabo impedit nobis similique, perferendis veniam iure minus voluptate. Quo maiores doloribus atque rem facilis fuga accusantium in ea!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, veniam! Nam explicabo impedit nobis similique, perferendis veniam iure minus voluptate. Quo maiores doloribus atque rem facilis fuga accusantium in ea!
+            </p>
+        </section>
+        <section class="col-span-full">
+            <div>
+            <model-viewer src="model/ear-buds-for-AR.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" >
+                <button class="Hotspot" slot="hotspot-1" data-position="173.95244751592787m 405.29599726945264m 856.9248938357206m" data-normal="-0.5558928819080562m 0.060720334811619696m 0.829033259154493m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-1">Elegant Design</div>
+          
+                </button><button class="Hotspot" slot="hotspot-2" data-position="-489.27524070999834m 292.6702448562771m 897.2212788964938m" data-normal="0.5415145026706071m 0.20508466691579516m 0.815292783479311m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-2">Crisp And Clear Sound</div>
+          
+                </button><button class="Hotspot" slot="hotspot-3" data-position="-232.4458252947593m 411.85793879104966m 786.1247214750355m" data-normal="0.595543871165418m -0.078672466527089m 0.7994611563596146m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-3">LED lights</div>
+          
+                </button><button class="Hotspot" slot="hotspot-4" data-position="-371.1940956951242m 218.98434755368157m 865.0099713863602m" data-normal="0.606954469819353m -0.4962331554825707m 0.6207728465116038m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-4">Confort FIt</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="images/ar_hand_prompt.png">
+                </div>
+              </model-viewer>  
+        </section>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-placeholder">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Shanks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
