@@ -1,3 +1,4 @@
+
 //for scroll based animation 
 
 (() => {
@@ -43,4 +44,46 @@
       context.drawImage(images[buds.frame], 0, 0);
     }
   })();
-  
+
+
+
+// For the x-ray slider 
+
+(() => {
+    var imageCon = document.querySelector('#imageCon'),
+        drag = document.querySelector('.image-drag'),
+        left = document.querySelector('.image-left'),
+        dragging = false,
+        min = 0,
+        max = imageCon.offsetWidth;
+
+    function onDown(event) {
+        dragging = true;
+        event.preventDefault();
+    }
+
+    function onUp() {
+        dragging = false;
+    }
+
+    function onMove(event) {
+        if (dragging === true) {
+            var x = event.clientX - imageCon.getBoundingClientRect().left;
+
+            if (x < min) {
+                x = min;
+            } else if (x > max) {
+                x = max - 4;
+            }
+
+            drag.style.left = x + 'px';
+            left.style.width = x + 'px';
+        }
+    }
+
+    drag.addEventListener('mousedown', onDown, false);
+    document.body.addEventListener('mouseup', onUp, false);
+    document.addEventListener('mousemove', onMove, false);
+})();
+
+
