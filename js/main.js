@@ -1,5 +1,4 @@
 
-
 //for scroll based animation 
 
 (() => {
@@ -47,6 +46,7 @@
   })();
 
 
+
 // For the x-ray slider 
 
 (() => {
@@ -85,4 +85,5 @@
     document.body.addEventListener('mouseup', onUp, false);
     document.addEventListener('mousemove', onMove, false);
 })();
+
 

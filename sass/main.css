@@ -129,12 +129,12 @@ body {
 
 #menuToggle input:checked ~ ul {
   transform: none;
-<<<<<<< Updated upstream
-=======
+
 }
 
 #explode-view {
   max-width: 100%;
+
 }
 
 #outerShell {
@@ -177,5 +177,5 @@ body {
     width: 4px; /*orig 49*/
     cursor: pointer;
   }
->>>>>>> Stashed changes
+
 }/*# sourceMappingURL=main.css.map */
