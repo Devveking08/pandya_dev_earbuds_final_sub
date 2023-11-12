@@ -129,4 +129,8 @@ body {
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+#explode-view {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
