@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+code {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+#content p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6; /* Adjust the line height for better readability */
+  letter-spacing: 0.05em; /* Add a small letter spacing for a subtle effect */
+  margin-bottom: 20px; /* Add some margin to create space between elements */
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -299,4 +314,61 @@ model-viewer[ar-status=session-started] > #ar-prompt {
 
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-placeholder img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /*  Adds a circular border to the logo */
+  margin-bottom: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright p {
+  margin: 0; /* Remove default margin */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Add some spacing between contact info */
+}
+
+.feedback-form {
+  margin-top: 10px;
+}
+
+.feedback-form label,
+.feedback-form textarea,
+.feedback-form button {
+  margin-bottom: 10px;
+}
+
+.feedback-form textarea {
+  height: 100px;
+  padding: 10px;
+  resize: none; /* Disable textarea resizing */
+  border: 1px solid #ccc; /* Add a border to the textarea */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  font-family: "Arial", sans-serif; /* Choose a suitable font */
+}
+
+.feedback-form button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: darkred; /* Change color on hover */
 }/*# sourceMappingURL=main.css.map */

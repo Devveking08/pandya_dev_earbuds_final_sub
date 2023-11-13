@@ -27,7 +27,7 @@
                 <ul id="menu">
                     <a href="#home"><li>Home</li></a>
                     <a href="#about"><li>About</li></a>
-                    <a href="#Features"><li>Features</li></a>
+                    <a href="#features"><li>Features</li></a>
                     <a href="#contact"><li>Contact</li></a>
                 </ul>
             </div>
@@ -38,13 +38,13 @@
         </div>
     </div>
 
-    <div class="col-span-full">
+    <div  class="col-span-full">
         <canvas id="explode-view">    
     </canvas> 
     </div>
     
-    <section class="grid-con">
-        <section id="home" class="col-span-full"> <!--Home Section-->
+    <section id="home" class="grid-con"><!--Home Section-->
+        <section id="content"  class="col-span-full"> 
             <p>
                 Ahoy, fellow pirates and music enthusiasts! Set sail on a musical adventure like never before with our Shanks-based earbuds inspired by the legendary Red-Haired Shanks from One Piece. Just like Shanks commands respect on the high seas, these earbuds are here to deliver a superior audio experience that will leave you in awe. Let's dive into the features that make these earbuds a treasure for every music lover.
             </p>
@@ -78,7 +78,8 @@
             </div>  
         </div>
 
-        <section class="col-span-full">
+        &nbsp;
+        <section id="content" class="col-span-full">
             <p>
                 Premium Sound, Sleek Design: Elevate your music experience with Shanks Earbuds – where cutting-edge design meets unparalleled sound quality. Perfect Fit, All Day Comfort: Enjoy a secure and comfortable fit designed for extended wear, ensuring your earbuds stay in place during your active lifestyle
             </p>
@@ -93,7 +94,7 @@
                 Welcome to the Future of Sound: Shanks Earbuds redefine the way you listen – join us on a journey where innovation meets your auditory desires.
             </p>
         </section>
-        <section class="col-span-full">
+        <section id="features" class="col-span-full">
             <div>
             <model-viewer src="model/ear-buds-for-AR.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" >
                 <button class="Hotspot" slot="hotspot-1" data-position="173.95244751592787m 405.29599726945264m 856.9248938357206m" data-normal="-0.5558928819080562m 0.060720334811619696m 0.829033259154493m" data-visibility-attribute="visible">
@@ -120,13 +121,30 @@
               </model-viewer>  
         </section>
     </section>
-    <footer>
-        <div class="footer-container">
+    &nbsp;
+    <footer id="contact"  style="background-color: black; border-top: 2px solid red; padding: 20px; color: white;">
+        <div class="footer-container" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo-placeholder">
-                <img src="images/logo.png" alt="Logo">
+                <!-- Placeholder for your logo -->
+                <img src="images/logo.png" alt="Logo" style="width: 100px; height: 100px;">
             </div>
-            <div class="footer-copyright">
-                <p>&copy; 2023 Shanks. All rights reserved.</p>
+            <div id="content" class="footer-content">
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Shanks. All rights reserved.</p>
+                </div>
+                <div id="content" class="contact-info">
+                    <p>Contact us:</p>
+                    <p>Email: info@shanks.com</p>
+                </div>
+                <div id="content" class="feedback-form">
+                    <form action="submit_feedback.php" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
